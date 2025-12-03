@@ -1,0 +1,50 @@
+/* print.css - Estilos para impressão */
+@media print {
+    .navbar, 
+    .btn-floating, 
+    .notification-container, 
+    .modal-overlay, 
+    .loading-screen,
+    .hero-section,
+    .features-section,
+    .api-info,
+    footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt !important;
+    }
+    
+    .dashboard-card {
+        break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        margin-bottom: 15px !important;
+        page-break-inside: avoid;
+    }
+    
+    .chart-container {
+        height: 200px !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+    
+    .container-fluid {
+        padding: 0 !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black !important;
+    }
+    
+    .card-header {
+        background: #f8f9fa !important;
+        color: black !important;
+    }
+}
